@@ -2,4 +2,4 @@ images
 *.jpg
 *.png
 *.svg
-
+*.gitignore
