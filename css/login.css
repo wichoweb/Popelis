@@ -9,6 +9,12 @@ html {
 }
 
 body {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-height: 1200px;
+    height: auto;
+    min-height: 100vh;
     font-family: 'Noto Sans KR', sans-serif;
     background: #003049;
     /* background-image: linear-gradient(180deg, #000000 0%, #070707 100%); */
