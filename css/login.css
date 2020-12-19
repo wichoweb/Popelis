@@ -12,9 +12,7 @@ body {
     position: relative;
     width: 100%;
     min-width: 320px;
-    max-height: 1200px;
     height: auto;
-    min-height: 100vh;
     font-family: 'Noto Sans KR', sans-serif;
     background: #003049;
     /* background-image: linear-gradient(180deg, #000000 0%, #070707 100%); */
@@ -39,11 +37,13 @@ header img {
 main {
     width: 100%;
     min-width: 320px;
+    height: 100vh;
 }
 
 .login__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
     min-width: 280px;
@@ -76,13 +76,24 @@ main {
 .input {
     display: inline-block;
     min-width: 200px;
+    height: 50px;
     min-height: 25px;
     margin-bottom: 20px;
-    padding: 5px;
-    border-radius: 2px;
-    border: none;
+    padding: 0 2px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #fff;
+    border-left: 0px;
+    background-color: transparent;
     outline: none;
     
+}
+
+::placeholder {
+    color: #fff;
 }
 
 .button {
@@ -174,12 +185,14 @@ main {
 
 .footer {
     display: flex;
+    align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0;
+    left: 0;
+    bottom: 0px;
     width: 100%;
     min-width: 320px;
-    min-height: 50px;
+    height: 80px;
     background-color: #0f0f0f;
 }
 .footer a {
